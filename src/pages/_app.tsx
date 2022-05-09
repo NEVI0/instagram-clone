@@ -1,12 +1,21 @@
 import type { AppProps } from 'next/app'
 import { AppProvider } from '../context/AppContext';
 
-import '../styles/globals.css';
+import { Header } from '../components';
+
+import { GlobalStyles } from '../styles/global';
+import { Layout } from './styles';
 
 const App = ({ Component, pageProps }: AppProps) => {
 	return (
 		<AppProvider>
-			<Component { ...pageProps } />
+			<GlobalStyles />
+
+			<Layout>
+				<Header />
+				
+				<Component { ...pageProps } />
+			</Layout>
 		</AppProvider>
 	);
 }

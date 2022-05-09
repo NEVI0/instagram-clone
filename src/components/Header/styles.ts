@@ -47,6 +47,7 @@ export const Header = styled.div`
 			> .nav__link__icon {
 				font-size: 24px;
 				color: ${props => props.theme.colors.text};
+				cursor: pointer;
 			}
 
 			> .nav__link__user {
@@ -62,6 +63,7 @@ export const Logo = styled.img`
 	width: 103px;
 	height: 29px;
 	object-fit: cover;
+	cursor: pointer;
 `;
 
 export const SearchIcon = styled(FiSearch)`

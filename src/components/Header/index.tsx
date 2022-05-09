@@ -7,27 +7,27 @@ import * as S from './styles';
 const NAV_LINKS = [
 	{
 		id: 1,
-		to: '/...',
+		to: '/messenger',
 		icon: <FiHome className="nav__link__icon" />
 	},
 	{
 		id: 2,
-		to: '/...',
+		to: '/messenger',
 		icon: <FiMessageCircle className="nav__link__icon" />
 	},
 	{
 		id: 3,
-		to: '/...',
+		to: '/messenger',
 		icon: <FiPlusSquare className="nav__link__icon" />
 	},
 	{
 		id: 4,
-		to: '/...',
+		to: '/messenger',
 		icon: <FiCompass className="nav__link__icon" />
 	},
 	{
 		id: 5,
-		to: '/...',
+		to: '/messenger',
 		icon: <FiHeart className="nav__link__icon" />
 	}
 ];
@@ -36,10 +36,12 @@ const Header: React.FC = () => {
 	return (
 		<S.Header>
 			<div className="container">
-				<S.Logo
-					src="/images/instagram-logo.png"
-					alt="Instagram Logo"
-				/>
+				<Link href="/">
+					<S.Logo
+						src="/images/instagram-logo.png"
+						alt="Instagram Logo"
+					/>
+				</Link>
 
 				<div className="search">
 					<S.SearchIcon />

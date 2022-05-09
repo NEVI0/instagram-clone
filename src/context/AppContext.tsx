@@ -1,5 +1,5 @@
 import React, { useState, useContext, createContext } from 'react';
-import { DefaultTheme } from 'styled-components';
+import { DefaultTheme, ThemeProvider } from 'styled-components';
 
 import { createTheme } from '../styles/theme';
 
@@ -14,12 +14,10 @@ export const AppProvider: React.FC<{ children: any; }> = ({ children }) => {
 	const [ theme, setTheme ] = useState<DefaultTheme>(createTheme());
 
 	return (
-		<AppContext.Provider
-			value={{
-				theme
-			}}
-		>
-			{ children }
+		<AppContext.Provider value={{ theme }}>
+			<ThemeProvider theme={ theme }>
+				{ children }
+			</ThemeProvider>
 		</AppContext.Provider>
 	);
 
