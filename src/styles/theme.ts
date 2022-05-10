@@ -9,8 +9,8 @@ export const createTheme = (): DefaultTheme => {
 			body: '#FAFAFA',
 			container: '#FFFFFF',
 			text: '#262626',
-			textLight: '#FAFAFA',
-			gray: '#EFEFEF',
+			textLight: '#EFEFEF',
+			gray: '#DBDBDB',
 			blue: '#0095F6'
 		}
 	};

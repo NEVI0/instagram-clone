@@ -25,8 +25,8 @@ export const Header = styled.div`
 			border-radius: 8px;
 			height: 36px;
 			width: 268px;
-			background-color: ${props => props.theme.colors.gray};
-			border: 1px solid ${props => props.theme.colors.gray};
+			background-color: ${props => props.theme.colors.textLight};
+			border: 1px solid ${props => props.theme.colors.textLight};
 			
 			> .search__input {
 				flex: 1;
