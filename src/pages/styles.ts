@@ -18,13 +18,35 @@ export const Container = styled.div`
 	> .container__column {
 		display: flex;
 		flex-direction: column;
+
+		> .stories {
+			display: flex;
+			align-items: center;
+			padding: 16px 0;
+			border-radius: 3px;
+			border: 1px solid ${props => props.theme.colors.gray};
+			background-color: ${props => props.theme.colors.container};
+			position: relative;
+			overflow-x: auto;
+
+			::-webkit-scrollbar {
+				display: none;
+			}
+		}
+
+		> .posts {
+			
+		}
 	}
 
 	> .container__column-1 {
-		flex: 0.6;
+		width: 65%;
+		display: flex;
+		flex-direction: column;
+		row-gap: 24px;
 	}
 
 	> .container__column-2 {
-		flex: 0.4;
+		width: 35%;
 	}
 `;
