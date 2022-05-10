@@ -1,9 +1,10 @@
 import type { NextPage } from 'next';
 
-import { Story } from '../components';
+import { Post, Story } from '../components';
 import * as S from './styles';
 
 import { STORIES } from '../mocks/stories';
+import { POSTS } from '../mocks/posts';
 
 const Home: NextPage = () => {
 	return (
@@ -18,7 +19,11 @@ const Home: NextPage = () => {
 				</div>
 
 				<div className="posts">
-					posts here!
+					{
+						POSTS.map(post => (
+							<Post post={ post } />
+						))
+					}
 				</div>
 			</div>
 

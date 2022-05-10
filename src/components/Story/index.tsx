@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { TStory } from '../../types/Story';
+import { TStory } from '../../types';
 import * as S from './styles';
 
 const Story: React.FC<{ story: TStory; }> = ({ story }) => {

@@ -14,10 +14,18 @@ export const Container = styled.div`
 	display: flex;
 	align-items: flex-start;
 	column-gap: 28px;
+	padding-bottom: 24px;
 
 	> .container__column {
 		display: flex;
 		flex-direction: column;
+	}
+
+	> .container__column-1 {
+		width: 65%;
+		display: flex;
+		flex-direction: column;
+		row-gap: 24px;
 
 		> .stories {
 			display: flex;
@@ -35,15 +43,10 @@ export const Container = styled.div`
 		}
 
 		> .posts {
-			
+			display: flex;
+			flex-direction: column;
+			row-gap: 24px;
 		}
-	}
-
-	> .container__column-1 {
-		width: 65%;
-		display: flex;
-		flex-direction: column;
-		row-gap: 24px;
 	}
 
 	> .container__column-2 {
