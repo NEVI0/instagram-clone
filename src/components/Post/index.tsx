@@ -52,13 +52,17 @@ const Post: React.FC<{ post: TPost; }> = ({ post }) => {
 			</div>
 
 			<div className="post__add__comment">
-				<FiSmile />
+				<FiSmile className="smile__icon" />
 
-				<input type="text" />
+				<input
+					type="text"
+					placeholder="Add a comment..."
+					className="add__comment__input"
+				/>
 
-				<button>
+				<a className="add__comment__button">
 					Post
-				</button>
+				</a>
 			</div>
 		</S.Post>
 	);

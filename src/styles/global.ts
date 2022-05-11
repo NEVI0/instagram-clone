@@ -15,6 +15,10 @@ export const GlobalStyles = createGlobalStyle`
 		text-decoration: none;
 	}
 
+	input {
+		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	}
+
 	button, a {
 		cursor: pointer;
 	}

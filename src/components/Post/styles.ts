@@ -11,7 +11,7 @@ export const Post = styled.div`
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		padding: 12px;
+		padding: 14px 16px;
 
 		> .user {
 			display: flex;
@@ -19,8 +19,8 @@ export const Post = styled.div`
 			column-gap: 12px;
 
 			> .story__circle {
-				width: 40px;
-				height: 40px;
+				width: 42px;
+				height: 42px;
 				display: flex;
 				align-items: center;
 				justify-content: center;
@@ -29,8 +29,8 @@ export const Post = styled.div`
 				cursor: pointer;
 
 				> .story__image {
-					width: 32px;
-					height: 32px;
+					width: 34px;
+					height: 34px;
 					border-radius: 100%;
 					border: 2px solid ${props => props.theme.colors.container};
 				}
@@ -39,7 +39,7 @@ export const Post = styled.div`
 			> .user__name {
 				cursor: pointer;
 				font-size: 14px;
-				font-weight: 500
+				font-weight: 600
 			}
 		}
 
@@ -56,7 +56,7 @@ export const Post = styled.div`
 		
 		> .post__image {
 			width: 100%;
-			max-height: 750px;
+			max-height: 765px;
 		}
 	}
 
@@ -64,7 +64,7 @@ export const Post = styled.div`
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		padding: 12px;
+		padding: 14px 16px;
 
 		> .post__actions-main {
 			display: flex;
@@ -75,6 +75,31 @@ export const Post = styled.div`
 
 		.action__button {
 			font-size: 24px;
+		}
+	}
+
+	> .post__add__comment {
+		display: flex;
+		align-items: center;
+		padding: 14px 16px;
+		column-gap: 16px;
+		border-top: 1px solid ${props => props.theme.colors.gray};
+
+		> .smile__icon {
+			font-size: 24px;
+		}
+
+		> .add__comment__input {
+			flex: 1;
+			border: none;
+			outline: none;
+			font-size: 14px;
+		}
+
+		> .add__comment__button {
+			color: ${props => props.theme.colors.blue};
+			font-weight: 600;
+			font-size: 14px;
 		}
 	}
 `;
