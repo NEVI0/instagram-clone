@@ -9,7 +9,7 @@ export const createTheme = (): DefaultTheme => {
 			body: '#FAFAFA',
 			container: '#FFFFFF',
 			text: '#262626',
-			textLight: '#EFEFEF',
+			textLight: '#8e8e8e',
 			gray: '#DBDBDB',
 			blue: '#0095F6'
 		}

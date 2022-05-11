@@ -22,7 +22,7 @@ export const Container = styled.div`
 	}
 
 	> .container__column-1 {
-		width: 65%;
+		width: 60%;
 		display: flex;
 		flex-direction: column;
 		row-gap: 24px;
@@ -50,6 +50,46 @@ export const Container = styled.div`
 	}
 
 	> .container__column-2 {
-		width: 35%;
+		width: 40%;
+
+		> .user {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			margin: 18px 0;
+
+			> .user__data {
+				display: flex;
+				align-items: center;
+				column-gap: 16px;
+				cursor: pointer;
+
+				> .user__image {
+					width: 56px;
+					border-radius: 100%;
+				}
+
+				> .user__description {
+					display: flex;
+					flex-direction: column;
+					font-size: 14px;
+
+					> .user__tag {
+						font-weight: 600;
+					}
+
+					> .user__name {
+						margin-top: -4px;
+						color: ${props => props.theme.colors.textLight};
+					}
+				}
+			}
+
+			> .switch__account {
+				font-size: 12px;
+				font-weight: 600;
+				color: ${props => props.theme.colors.blue};
+			}
+		}
 	}
 `;

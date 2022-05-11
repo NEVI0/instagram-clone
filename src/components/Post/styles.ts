@@ -78,6 +78,23 @@ export const Post = styled.div`
 		}
 	}
 
+	> .post__data {
+		display: flex;
+		flex-direction: column;
+		row-gap: 2px;
+		padding: 0 16px 14px 16px;
+
+		> .post__info {
+			font-size: 14px;
+			font-weight: 400;
+			color: ${props => props.theme.colors.text};
+		}
+
+		> .view__comments {
+			color: ${props => props.theme.colors.textLight};
+		}
+	}
+
 	> .post__add__comment {
 		display: flex;
 		align-items: center;

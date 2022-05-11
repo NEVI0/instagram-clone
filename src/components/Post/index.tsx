@@ -44,11 +44,15 @@ const Post: React.FC<{ post: TPost; }> = ({ post }) => {
 			</div>
 
 			<div className="post__data">
+				<span className="post__info">
+					Liked by <strong>w4gn3r2038</strong> and <strong>others</strong>
+				</span>
 
-			</div>
+				<span className="post__info">
+					<strong className="by">{ post.user.name }</strong> { post.title }
+				</span>
 
-			<div className="post__comments">
-
+				<a className="post__info view__comments">View all 10 comments</a>
 			</div>
 
 			<div className="post__add__comment">

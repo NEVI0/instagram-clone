@@ -1,5 +1,6 @@
 type TPost = {
 	id: number;
+	title: string;
 	createdAt: Date;
 	user: {
 		name: string;

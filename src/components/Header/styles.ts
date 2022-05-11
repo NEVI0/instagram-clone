@@ -25,8 +25,8 @@ export const Header = styled.div`
 			border-radius: 8px;
 			height: 36px;
 			width: 268px;
-			background-color: ${props => props.theme.colors.textLight};
-			border: 1px solid ${props => props.theme.colors.textLight};
+			background-color: #EFEFEF;
+			border: 1px solid #EFEFEF;
 			
 			> .search__input {
 				flex: 1;
@@ -68,5 +68,5 @@ export const Logo = styled.img`
 
 export const SearchIcon = styled(FiSearch)`
 	font-size: 16px;
-	color: #8e8e8e;
+	color: ${props => props.theme.colors.textLight};
 `;

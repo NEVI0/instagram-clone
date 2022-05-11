@@ -3,6 +3,7 @@ import { TPost } from '../types';
 export const POSTS: Array<TPost> = [
 	{
 		id: 1,
+		title: 'This is my wallpaper :)',
 		createdAt: new Date(),
 		user: {
 			name: 'dim_san12',
@@ -24,6 +25,7 @@ export const POSTS: Array<TPost> = [
 	},
 	{
 		id: 2,
+		title: 'Just some random thing...',
 		createdAt: new Date(),
 		user: {
 			name: 'ferdinanda',
