@@ -22,7 +22,7 @@ export const Container = styled.div`
 	}
 
 	> .container__column-1 {
-		width: 60%;
+		width: 65%;
 		display: flex;
 		flex-direction: column;
 		row-gap: 24px;
@@ -50,13 +50,15 @@ export const Container = styled.div`
 	}
 
 	> .container__column-2 {
-		width: 40%;
+		width: 35%;
 
 		> .user {
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
 			margin: 18px 0;
+			position: fixed;
+			width: 297px;
 
 			> .user__data {
 				display: flex;
