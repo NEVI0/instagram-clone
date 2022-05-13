@@ -14,7 +14,8 @@ export const Story = styled.div`
 		align-items: center;
 		justify-content: center;
 		border-radius: 100%;
-		background-color: ${props => props.theme.colors.primary};
+		background: #d6249f;
+  		background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%);
 
 		> .story__image {
 			width: 56px;
