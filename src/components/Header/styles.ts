@@ -2,11 +2,17 @@ import { FiSearch } from 'react-icons/fi';
 import styled from 'styled-components';
 
 export const Header = styled.div`
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
 	display: flex;
 	justify-content: center;
 	height: 60px;
 	border-bottom: 1px solid ${props => props.theme.colors.gray};
 	background-color: ${props => props.theme.colors.container};
+	z-index: 5;
+
 	
 	> .container {
 		display: flex;

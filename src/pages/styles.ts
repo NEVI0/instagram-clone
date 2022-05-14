@@ -3,7 +3,6 @@ import styled from 'styled-components';
 export const Layout = styled.div`
 	display: flex;
 	flex-direction: column;
-	row-gap: 24px;
 	background-color: ${props => props.theme.colors.body};
 `;
 
@@ -15,6 +14,7 @@ export const Container = styled.div`
 	align-items: flex-start;
 	column-gap: 28px;
 	padding-bottom: 24px;
+	margin-top: calc(60px + 28px);
 
 	> .container__column {
 		display: flex;
@@ -52,45 +52,74 @@ export const Container = styled.div`
 	> .container__column-2 {
 		width: 35%;
 
-		> .user {
-			display: flex;
-			align-items: center;
-			justify-content: space-between;
-			margin: 18px 0;
+		> .container__data {
+			margin: 20px 0;
 			position: fixed;
 			width: 297px;
-
-			> .user__data {
+			display: flex;
+			flex-direction: column;
+			row-gap: 16px;
+			
+			> .user {
 				display: flex;
 				align-items: center;
-				column-gap: 16px;
-				cursor: pointer;
+				justify-content: space-between;
 
-				> .user__image {
-					width: 56px;
-					border-radius: 100%;
+				> .user__data {
+					display: flex;
+					align-items: center;
+					column-gap: 16px;
+					cursor: pointer;
+
+					> .user__image {
+						width: 56px;
+						border-radius: 100%;
+					}
+
+					> .user__description {
+						display: flex;
+						flex-direction: column;
+						font-size: 14px;
+
+						> .user__tag {
+							font-weight: 600;
+						}
+
+						> .user__name {
+							margin-top: -4px;
+							color: ${props => props.theme.colors.textLight};
+						}
+					}
 				}
 
-				> .user__description {
-					display: flex;
-					flex-direction: column;
-					font-size: 14px;
-
-					> .user__tag {
-						font-weight: 600;
-					}
-
-					> .user__name {
-						margin-top: -4px;
-						color: ${props => props.theme.colors.textLight};
-					}
+				> .switch__account {
+					font-size: 12px;
+					font-weight: 600;
+					color: ${props => props.theme.colors.blue};
 				}
 			}
 
-			> .switch__account {
-				font-size: 12px;
-				font-weight: 600;
-				color: ${props => props.theme.colors.blue};
+			> .suggestions {
+				display: flex;
+				flex-direction: column;
+				row-gap: 8px;
+
+				> .suggestions__header {
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+
+					> .suggestion__title {
+						font-size: 14px;
+						font-weight: 600;
+						color: ${props => props.theme.colors.textLight};
+					}
+
+					> .see__all {
+						font-size: 12px;
+						font-weight: 600;
+					}
+				}
 			}
 		}
 	}
