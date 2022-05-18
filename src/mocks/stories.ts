@@ -1,4 +1,4 @@
-import { TStory } from '../types/Story';
+import { TStory } from '../types';
 
 export const STORIES: Array<TStory> = [
 	{
