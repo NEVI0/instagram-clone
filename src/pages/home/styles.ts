@@ -1,11 +1,5 @@
 import styled from 'styled-components';
 
-export const Layout = styled.div`
-	display: flex;
-	flex-direction: column;
-	background-color: ${props => props.theme.colors.body};
-`;
-
 export const Container = styled.div`
 	width: 100%;
 	max-width: 937px;
