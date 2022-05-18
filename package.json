@@ -2,6 +2,8 @@
   "name": "instagram-clone",
   "version": "0.1.0",
   "private": true,
+  "author": "Névio Costa Magagnin",
+  "repository": "https://github.com/NEVI0/instagram-clone",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
