@@ -102,7 +102,7 @@ export const Container = styled.div`
 			> .suggestions {
 				display: flex;
 				flex-direction: column;
-				row-gap: 8px;
+				row-gap: 10px;
 
 				> .suggestions__header {
 					display: flex;

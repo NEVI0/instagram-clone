@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import type { NextPage } from 'next';
 
-import { Post, Story, SuggestionUser } from '../components';
+import { Post, Story, SuggestionUser, RefreshContent } from '../components';
 import * as S from './styles';
 
 import { STORIES } from '../mocks/stories';
@@ -13,6 +13,8 @@ const Home: NextPage = () => {
 			<Head>
 				<title>Instagram Clone</title>
 			</Head>
+
+			<RefreshContent />
 
 			<div className="container__column container__column-1">
 				<div className="stories">
