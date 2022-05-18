@@ -23,7 +23,7 @@ export const GlobalStyles = createGlobalStyle`
 		cursor: pointer;
 	}
 
-	h1, h2, h3, h4, h5 {
+	h1, h2, h3, h4, h5, p {
 		margin: 0;
 	}	
 `;

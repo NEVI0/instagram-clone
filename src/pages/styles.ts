@@ -58,7 +58,7 @@ export const Container = styled.div`
 			width: 297px;
 			display: flex;
 			flex-direction: column;
-			row-gap: 16px;
+			row-gap: 20px;
 			
 			> .user {
 				display: flex;
@@ -119,6 +119,16 @@ export const Container = styled.div`
 						font-size: 12px;
 						font-weight: 600;
 					}
+				}
+			}
+
+			> .instagram__data {
+				font-size: 12px;
+				color: #c7c7c7;
+				font-weight: 400;
+
+				> .copyright {
+					margin-top: 16px;
 				}
 			}
 		}

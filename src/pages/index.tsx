@@ -64,13 +64,33 @@ const Home: NextPage = () => {
 							</a>
 						</div>
 
-						<div className="suggestion__list">
-							{
-								new Array(5).fill(0).map((_, index) => (
-									<SuggestionUser key={ index.toString() } />
-								))
-							}
+						{
+							new Array(5).fill(0).map((_, index) => (
+								<SuggestionUser key={ index.toString() } />
+							))
+						}
+					</div>
+
+					<div className="instagram__data">
+						<div className="links">
+							About &#9642;
+							Help &#9642;
+							Press &#9642;
+							API &#9642;
+							Jobs &#9642;
+							Privacy &#9642;
+							Terms &#9642;
+							Locations &#9642;
+							Top &#9642; 
+							Accounts &#9642;
+							Hashtags &#9642;
+							Language &#9642; 
+							English
 						</div>
+
+						<p className="copyright">
+							&copy; 2022 INSTAGRAM FROM META
+						</p>
 					</div>
 				</div>
 			</div>
