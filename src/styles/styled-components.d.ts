@@ -2,10 +2,13 @@ import 'styled-components';
 
 declare module 'styled-components' {
 	export interface DefaultTheme {
+		defaults: {
+			fontFamily: string;
+			fontSize: string;
+			containerMaxWidth: string;
+			headerHeight: string;
+		},
 		colors: {
-			primary: string;
-			secondary: string;
-			terciary: string;
 			body: string;
 			container: string;
 			text: string;
