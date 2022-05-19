@@ -6,7 +6,7 @@ import * as S from './styles';
 const Story: React.FC<{ story: TStory; }> = ({ story }) => {
 	return (
 		<S.Story>
-			<div className="story__circle gradient__background">
+			<div className="story__circle gradient-background">
 				<img
 					src={ story.image }
 					alt={ story.id + '-story-user' }

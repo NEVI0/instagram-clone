@@ -1,4 +1,5 @@
 import type { NextPage } from 'next';
+import Head from 'next/head';
 
 import { Post, Story, SuggestionUser, RefreshContent } from '../../components';
 import * as S from './styles';
@@ -8,7 +9,11 @@ import { POSTS } from '../../mocks/posts';
 
 const Home: NextPage = () => {
 	return (
-		<S.Container className="wrapper">
+		<S.Container className="wrapper margin-header">
+			<Head>
+				<title>Instagram Clone + Next.js</title>
+			</Head>
+
 			<RefreshContent />
 
 			<div className="column col1">

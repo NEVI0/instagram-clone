@@ -1,13 +1,17 @@
 import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyles = createGlobalStyle`
-	html,
-	body {
+	html {
+		scroll-behavior: smooth;
+	}
+
+	html, body {
 		margin: 0;
 		padding: 0;
 		box-sizing: border-box;
 		line-height: 150%;
 		color: ${props => props.theme.colors.text};
+		font-size: ${props => props.theme.defaults.fontSize};
 		font-family: ${props => props.theme.defaults.fontFamily};
 	}
 
@@ -25,10 +29,6 @@ export const GlobalStyles = createGlobalStyle`
 
 	h1, h2, h3, h4, h5, p {
 		margin: 0;
-	}
-
-	input, p, span, strong, em {
-		font-size: ${props => props.theme.defaults.fontSize};
 	}
 
 	::-webkit-scrollbar {
@@ -50,7 +50,11 @@ export const GlobalStyles = createGlobalStyle`
 		max-width: ${props => props.theme.defaults.containerMaxWidth};
 	}
 
-	.gradient__background {
+	.margin-header {
+		margin-top: calc(${props => props.theme.defaults.headerHeight} + 28px);
+	}
+
+	.gradient-background {
 		background: #d6249f;
   		background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%);
 	}

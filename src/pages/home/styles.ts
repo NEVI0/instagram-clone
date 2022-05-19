@@ -6,7 +6,6 @@ export const Container = styled.div`
 	align-items: flex-start;
 	column-gap: 28px;
 	padding-bottom: 24px;
-	margin-top: calc(${props => props.theme.defaults.headerHeight} + 28px);
 
 	> .column {
 		display: flex;

@@ -6,8 +6,6 @@ const Document = () => {
 			<Head>
 				<meta charSet="utf-8" />
 				<link rel="shortcut icon" href="/images/favicon.png" />
-
-				<title>Instagram Clone | Next.js</title>
 			</Head>
 			<body className="theme-light">
 				<Main />

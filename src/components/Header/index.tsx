@@ -58,7 +58,7 @@ const Header: React.FC = () => {
 					{
 						NAV_LINKS.map(link => (
 							<Link href={ link.to } key={ link.id.toString() }>
-								{ link.icon }
+								<>{ link.icon }</>
 							</Link>
 						))
 					}
