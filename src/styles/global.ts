@@ -31,6 +31,20 @@ export const GlobalStyles = createGlobalStyle`
 		font-size: ${props => props.theme.defaults.fontSize};
 	}
 
+	::-webkit-scrollbar {
+		width: 10px;
+	}
+	::-webkit-scrollbar-track {
+		background: ${props => props.theme.colors.container};
+		border-left: 1px solid ${props => props.theme.colors.gray};
+	}
+	::-webkit-scrollbar-thumb {
+		background: #888;
+	}
+	::-webkit-scrollbar-thumb:hover {
+		background: #555;
+	}
+
 	.wrapper {
 		width: 100%;
 		max-width: ${props => props.theme.defaults.containerMaxWidth};
