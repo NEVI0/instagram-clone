@@ -6,6 +6,7 @@ const RefreshContent: React.FC = () => {
 	const [ showRefreshButton, setShowRefreshButton ] = useState<boolean>(false);
 
 	useEffect(() => {
+		if (process.env.NODE_ENV === 'development') return;
 		const timer = setTimeout(() => setShowRefreshButton(true), 1000 * 1000);
 		return () => clearTimeout(timer);
 	  }, []);
