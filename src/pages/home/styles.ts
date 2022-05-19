@@ -1,52 +1,43 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-	width: 100%;
-	max-width: 937px;
-	align-self: center;
 	display: flex;
+	align-self: center;
 	align-items: flex-start;
 	column-gap: 28px;
 	padding-bottom: 24px;
-	margin-top: calc(60px + 28px);
+	margin-top: calc(${props => props.theme.defaults.headerHeight} + 28px);
 
-	> .container__column {
+	> .column {
 		display: flex;
 		flex-direction: column;
 	}
 
-	> .container__column-1 {
+	> .col1 {
 		width: 65%;
 		display: flex;
 		flex-direction: column;
 		row-gap: 24px;
 
 		> .stories {
+			overflow-x: auto;
 			display: flex;
 			align-items: center;
-			padding: 16px 0;
-			border-radius: 3px;
+			padding: 14px 0;
+			border-radius: 4px;
 			border: 1px solid ${props => props.theme.colors.gray};
 			background-color: ${props => props.theme.colors.container};
-			position: relative;
-			overflow-x: auto;
 
 			::-webkit-scrollbar {
 				display: none;
 			}
 		}
-
-		> .posts {
-			display: flex;
-			flex-direction: column;
-			row-gap: 24px;
-		}
 	}
 
-	> .container__column-2 {
+	> .col2 {
 		width: 35%;
 
-		> .container__data {
+		> .column__data {
 			margin: 20px 0;
 			position: fixed;
 			width: 297px;

@@ -8,10 +8,10 @@ import { POSTS } from '../../mocks/posts';
 
 const Home: NextPage = () => {
 	return (
-		<S.Container>
+		<S.Container className="wrapper">
 			<RefreshContent />
 
-			<div className="container__column container__column-1">
+			<div className="column col1">
 				<div className="stories">
 					{
 						STORIES.map(story => (
@@ -20,17 +20,15 @@ const Home: NextPage = () => {
 					}
 				</div>
 
-				<div className="posts">
-					{
-						POSTS.map(post => (
-							<Post post={ post } />
-						))
-					}
-				</div>
+				{
+					POSTS.map(post => (
+						<Post key={ post.id.toString() } post={ post } />
+					))
+				}
 			</div>
 
-			<div className="container__column container__column-2">
-				<div className="container__data">
+			<div className="column col2">
+				<div className="column__data">
 					<div className="user">
 						<div className="user__data">
 							<img
