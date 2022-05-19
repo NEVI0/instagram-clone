@@ -27,7 +27,12 @@ export const GlobalStyles = createGlobalStyle`
 		margin: 0;
 	}
 
-	p, span, strong, em {
+	input, p, span, strong, em {
 		font-size: ${props => props.theme.defaults.fontSize};
+	}
+
+	.wrapper {
+		width: 100%;
+		max-width: ${props => props.theme.defaults.containerMaxWidth};
 	}
 `;

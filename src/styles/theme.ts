@@ -6,7 +6,7 @@ export const createTheme = (): DefaultTheme => {
 			fontFamily: '"Segoe UI", Tahoma, Geneva, Verdana, sans-serif',
 			fontSize: '14px',
 			containerMaxWidth: '937px',
-			headerHeight: '80px'
+			headerHeight: '60px'
 		},
 		colors: {
 			body: '#FAFAFA',

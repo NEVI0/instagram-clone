@@ -1,4 +1,3 @@
-import { FiSearch } from 'react-icons/fi';
 import styled from 'styled-components';
 
 export const Header = styled.div`
@@ -8,71 +7,66 @@ export const Header = styled.div`
 	right: 0;
 	display: flex;
 	justify-content: center;
-	height: 60px;
 	border-bottom: 1px solid ${props => props.theme.colors.gray};
 	background-color: ${props => props.theme.colors.container};
+	height: ${props => props.theme.defaults.headerHeight};
 	z-index: 5;
-
 	
-	> .container {
+	> .nav {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 		height: 100%;
-		max-width: 937px;
-		width: 100%;
+
+		.logo {
+			width: 103px;
+			height: 29px;
+			margin-top: 7px;
+			cursor: pointer;
+		}
 
 		> .search {
-			border: 1px solid red;
 			display: flex;
 			align-items: center;
 			column-gap: 16px;
 			padding: 0 16px;
 			border-radius: 8px;
 			height: 36px;
-			width: 268px;
+			width: 240px;
 			background-color: #EFEFEF;
 			border: 1px solid #EFEFEF;
+			margin-left: 110px;
 			
+			> .search__icon {
+				font-size: 16px;
+				color: ${props => props.theme.colors.textLight};
+			}
+
 			> .search__input {
 				flex: 1;
-				line-height: 25px;
-				font-size: 14px;
-				background-color: transparent;
 				border: none;
 				outline: none;
-				color: ${props => props.theme.colors.text};
+				line-height: 25px;
+				background-color: transparent;
 			}
 		}
 
-		> .nav {
+		> .nav__links {
 			display: flex;
 			align-items: center;
-			column-gap: 24px;
+			column-gap: 20px;
 
-			> .nav__link__icon {
+			> .nav__link {
 				font-size: 24px;
 				color: ${props => props.theme.colors.text};
 				cursor: pointer;
 			}
 
-			> .nav__link__user {
+			> .link__user {
 				width: 24px;
 				border-radius: 100%;
+				cursor: pointer;
 			}
 		}
 	}
-`;
-
-export const Logo = styled.img`
-	margin-top: 7px;
-	width: 103px;
-	height: 29px;
-	object-fit: cover;
-	cursor: pointer;
-`;
-
-export const SearchIcon = styled(FiSearch)`
-	font-size: 16px;
-	color: ${props => props.theme.colors.textLight};
 `;

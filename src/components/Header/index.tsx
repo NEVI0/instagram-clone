@@ -1,50 +1,51 @@
 import React from 'react';
-import { FiHome, FiMessageCircle, FiPlusSquare, FiCompass, FiHeart } from 'react-icons/fi';
-import Link from 'next/link';
+import { FiHome, FiMessageCircle, FiPlusSquare, FiCompass, FiHeart, FiSearch } from 'react-icons/fi';
 
+import Link from 'next/link';
 import * as S from './styles';
 
 const NAV_LINKS = [
 	{
 		id: 1,
 		to: '/messenger',
-		icon: <FiHome className="nav__link__icon" />
+		icon: <FiHome className="nav__link" />
 	},
 	{
 		id: 2,
-		to: '/messenger',
-		icon: <FiMessageCircle className="nav__link__icon" />
+		to: '/text',
+		icon: <FiMessageCircle className="nav__link" />
 	},
 	{
 		id: 3,
-		to: '/messenger',
-		icon: <FiPlusSquare className="nav__link__icon" />
+		to: '/text',
+		icon: <FiPlusSquare className="nav__link" />
 	},
 	{
 		id: 4,
-		to: '/messenger',
-		icon: <FiCompass className="nav__link__icon" />
+		to: '/text',
+		icon: <FiCompass className="nav__link" />
 	},
 	{
 		id: 5,
-		to: '/messenger',
-		icon: <FiHeart className="nav__link__icon" />
+		to: '/text',
+		icon: <FiHeart className="nav__link" />
 	}
 ];
 
 const Header: React.FC = () => {
 	return (
 		<S.Header>
-			<div className="container">
-				<Link href="/">
-					<S.Logo
+			<div className="nav wrapper">
+				<Link href="/home">
+					<img
 						src="/images/instagram-logo.png"
-						alt="Instagram Logo"
+						alt="instagram-logo"
+						className="logo"
 					/>
 				</Link>
 
 				<div className="search">
-					<S.SearchIcon />
+					<FiSearch className="search__icon" />
 
 					<input
 						type="text"
@@ -53,7 +54,7 @@ const Header: React.FC = () => {
 					/>
 				</div>
 
-				<div className="nav">
+				<div className="nav__links">
 					{
 						NAV_LINKS.map(link => (
 							<Link href={ link.to } key={ link.id.toString() }>
@@ -66,7 +67,7 @@ const Header: React.FC = () => {
 						<img
 							src="/images/user.jpg"
 							alt="user-image"
-							className="nav__link__user"
+							className="link__user"
 						/>
 					</Link>
 				</div>
