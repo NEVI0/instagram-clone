@@ -7,7 +7,7 @@ export const Story = styled.div`
 	align-items: center;
 	cursor: pointer;
 
-	> .story__circle {
+	.story__circle {
 		width: 64px;
 		height: 64px;
 		display: flex;
@@ -15,7 +15,7 @@ export const Story = styled.div`
 		justify-content: center;
 		border-radius: 100%;
 
-		> .story__image {
+		.story__image {
 			width: 56px;
 			height: 56px;
 			border-radius: 100%;
@@ -23,7 +23,7 @@ export const Story = styled.div`
 		}
 	}
 
-	> .story__name {
+	.story__name {
 		font-size: 12px;
 		letter-spacing: .01em;
 		color: ${props => props.theme.colors.text};

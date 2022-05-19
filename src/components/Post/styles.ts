@@ -7,18 +7,18 @@ export const Post = styled.div`
 	border: 1px solid ${props => props.theme.colors.gray};
 	background-color: ${props => props.theme.colors.container};
 
-	> .post__header {
+	.post__header {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 		padding: 14px 16px;
 
-		> .user {
+		.user {
 			display: flex;
 			align-items: center;
 			column-gap: 12px;
 
-			> .story__circle {
+			.story__circle {
 				width: 42px;
 				height: 42px;
 				display: flex;
@@ -29,7 +29,7 @@ export const Post = styled.div`
   				background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%);
 				cursor: pointer;
 
-				> .story__image {
+				.story__image {
 					width: 34px;
 					height: 34px;
 					border-radius: 100%;
@@ -37,37 +37,37 @@ export const Post = styled.div`
 				}
 			}
 
-			> .user__name {
+			.user__name {
 				cursor: pointer;
 				font-size: 14px;
 				font-weight: 600
 			}
 		}
 
-		> .post__header__options {
+		.post__header__options {
 			font-size: 20px;
 			cursor: pointer;
 		}
 	}
 
-	> .post__content {
+	.post__content {
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		
-		> .post__image {
+		.post__image {
 			width: 100%;
 			max-height: 765px;
 		}
 	}
 
-	> .post__actions {
+	.post__actions {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 		padding: 14px 16px;
 
-		> .post__actions-main {
+		.post__actions-main {
 			display: flex;
 			align-items: center;
 			column-gap: 16px;
@@ -79,42 +79,42 @@ export const Post = styled.div`
 		}
 	}
 
-	> .post__data {
+	.post__data {
 		display: flex;
 		flex-direction: column;
 		row-gap: 2px;
 		padding: 0 16px 14px 16px;
 
-		> .post__info {
+		.post__info {
 			font-size: 14px;
 			font-weight: 400;
 			color: ${props => props.theme.colors.text};
 		}
 
-		> .view__comments {
+		.view__comments {
 			color: ${props => props.theme.colors.textLight};
 		}
 	}
 
-	> .post__add__comment {
+	.post__add__comment {
 		display: flex;
 		align-items: center;
 		padding: 14px 16px;
 		column-gap: 16px;
 		border-top: 1px solid ${props => props.theme.colors.gray};
 
-		> .smile__icon {
+		.smile__icon {
 			font-size: 24px;
 		}
 
-		> .add__comment__input {
+		.add__comment__input {
 			flex: 1;
 			border: none;
 			outline: none;
 			font-size: 14px;
 		}
 
-		> .add__comment__button {
+		.add__comment__button {
 			color: ${props => props.theme.colors.blue};
 			font-weight: 600;
 			font-size: 14px;

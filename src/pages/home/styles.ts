@@ -7,18 +7,18 @@ export const Container = styled.div`
 	column-gap: 28px;
 	padding-bottom: 24px;
 
-	> .column {
+	.column {
 		display: flex;
 		flex-direction: column;
 	}
 
-	> .col1 {
+	.col1 {
 		width: 65%;
 		display: flex;
 		flex-direction: column;
 		row-gap: 24px;
 
-		> .stories {
+		.stories {
 			overflow-x: auto;
 			display: flex;
 			align-items: center;
@@ -33,10 +33,10 @@ export const Container = styled.div`
 		}
 	}
 
-	> .col2 {
+	.col2 {
 		width: 35%;
 
-		> .column__data {
+		.column__data {
 			margin: 20px 0;
 			position: fixed;
 			width: 297px;
@@ -44,74 +44,74 @@ export const Container = styled.div`
 			flex-direction: column;
 			row-gap: 20px;
 			
-			> .user {
+			.user {
 				display: flex;
 				align-items: center;
 				justify-content: space-between;
 
-				> .user__data {
+				.user__data {
 					display: flex;
 					align-items: center;
 					column-gap: 16px;
 					cursor: pointer;
 
-					> .user__image {
+					.user__image {
 						width: 56px;
 						border-radius: 100%;
 					}
 
-					> .user__description {
+					.user__description {
 						display: flex;
 						flex-direction: column;
 						font-size: 14px;
 
-						> .user__tag {
+						.user__tag {
 							font-weight: 600;
 						}
 
-						> .user__name {
+						.user__name {
 							margin-top: -4px;
 							color: ${props => props.theme.colors.textLight};
 						}
 					}
 				}
 
-				> .switch__account {
+				.switch__account {
 					font-size: 12px;
 					font-weight: 600;
 					color: ${props => props.theme.colors.blue};
 				}
 			}
 
-			> .suggestions {
+			.suggestions {
 				display: flex;
 				flex-direction: column;
 				row-gap: 10px;
 
-				> .suggestions__header {
+				.suggestions__header {
 					display: flex;
 					align-items: center;
 					justify-content: space-between;
 
-					> .suggestion__title {
+					.suggestion__title {
 						font-size: 14px;
 						font-weight: 600;
 						color: ${props => props.theme.colors.textLight};
 					}
 
-					> .see__all {
+					.see__all {
 						font-size: 12px;
 						font-weight: 600;
 					}
 				}
 			}
 
-			> .instagram__data {
+			.instagram__data {
 				font-size: 12px;
 				color: #c7c7c7;
 				font-weight: 400;
 
-				> .copyright {
+				.copyright {
 					margin-top: 16px;
 				}
 			}
