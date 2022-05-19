@@ -49,4 +49,9 @@ export const GlobalStyles = createGlobalStyle`
 		width: 100%;
 		max-width: ${props => props.theme.defaults.containerMaxWidth};
 	}
+
+	.gradient__background {
+		background: #d6249f;
+  		background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%);
+	}
 `;
