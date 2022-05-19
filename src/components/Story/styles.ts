@@ -14,8 +14,6 @@ export const Story = styled.div`
 		align-items: center;
 		justify-content: center;
 		border-radius: 100%;
-		background: #d6249f;
-  		background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%);
 
 		> .story__image {
 			width: 56px;
@@ -27,6 +25,7 @@ export const Story = styled.div`
 
 	> .story__name {
 		font-size: 12px;
+		letter-spacing: .01em;
 		color: ${props => props.theme.colors.text};
 	}
 
