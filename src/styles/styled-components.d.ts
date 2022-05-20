@@ -3,11 +3,15 @@ import 'styled-components';
 declare module 'styled-components' {
 	export interface DefaultTheme {
 		defaults: {
-			fontFamily: string;
-			fontSize: string;
-			containerMaxWidth: string;
 			headerHeight: string;
+			containerMaxWidth: string;
 		},
+		font: {
+			family: string;
+			normalSize: string;
+			smallSize: string;
+			smallerSize: string;
+		};
 		colors: {
 			body: string;
 			container: string;

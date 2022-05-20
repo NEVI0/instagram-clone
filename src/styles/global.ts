@@ -11,8 +11,8 @@ export const GlobalStyles = createGlobalStyle`
 		box-sizing: border-box;
 		line-height: 150%;
 		color: ${props => props.theme.colors.text};
-		font-size: ${props => props.theme.defaults.fontSize};
-		font-family: ${props => props.theme.defaults.fontFamily};
+		font-size: ${props => props.theme.font.normalSize};
+		font-family: ${props => props.theme.font.family};
 	}
 
 	a {
@@ -20,7 +20,7 @@ export const GlobalStyles = createGlobalStyle`
 	}
 
 	input, button, a {
-		font-family: ${props => props.theme.defaults.fontFamily};
+		font-family: ${props => props.theme.font.family};
 	}
 
 	button, a {

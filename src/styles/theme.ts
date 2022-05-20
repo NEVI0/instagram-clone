@@ -3,10 +3,14 @@ import { DefaultTheme } from 'styled-components';
 export const createTheme = (): DefaultTheme => {
 	return {
 		defaults: {
-			fontFamily: '"Segoe UI", Tahoma, Geneva, Verdana, sans-serif',
-			fontSize: '14px',
-			containerMaxWidth: '937px',
-			headerHeight: '60px'
+			headerHeight: '60px',
+			containerMaxWidth: '937px'
+		},
+		font: {
+			family: '"Segoe UI", Tahoma, Geneva, Verdana, sans-serif',
+			normalSize: '1rem',
+			smallSize: '.875rem',
+			smallerSize: '75rem'
 		},
 		colors: {
 			body: '#FAFAFA',
